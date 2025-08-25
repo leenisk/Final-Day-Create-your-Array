@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--  don't touch this part it is no use for you -->
-    <div class="container">
-      <h1>Welcome to the website</h1>
-      <p>This is a paragraph</p>
-      <button>Click me</button>
-    </div>
 
-    <!--  Names input and button this will be the place to print from -->
-    <div class="student-info">
-      <h1>please add your name here</h1>
-      <input type="text" name="name" id="name" />
-      <!-- add the function here to add name -->
-      <button onclick="">Add Name</button>
-      <!-- add the function here to remove  -->
-      <button onclick="">remove Name</button>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Print the names here  -->
-    <div class="names">
-      <ul id="namesList"></ul>
-    </div>
+<body>
+  <!--  don't touch this part it is no use for you -->
+  <div class="container">
+    <h1>Welcome to the website</h1>
+    <p>This is a paragraph</p>
+    <button>Click me</button>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <!--  Names input and button this will be the place to print from -->
+  <div class="student-info">
+    <h1>please add your name here</h1>
+    <input type="text" name="name" id="name" />
+    <!-- add the function here to add name -->
+    <button onclick="addName()">Add Name</button>
+    <!-- add the function here to remove  -->
+    <button onclick="removeName()">remove Name</button>
+  </div>
+
+  <!-- Print the names here  -->
+  <div class="names">
+    <ul id="namesList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
